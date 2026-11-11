@@ -1,38 +1,18 @@
+customCommands:
+  - key: "C"
+    command: "git cz"
+    description: "commit with commitizen"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    output: terminal
+os:
+  edit: 'if [ -z "$NVIM" ]; then nvim -- {{filename}}; else nvim --server "$NVIM" --remote-send "q"; nvim --server "$NVIM" --remote-send "<Cmd>lua require(\"craftzdog.utils.lazygit\").focus_origin()<CR>"; nvim --server "$NVIM" --remote {{filename}}; fi'
+  editAtLine: 'if [ -z "$NVIM" ]; then nvim +{{line}} -- {{filename}}; else nvim --server "$NVIM" --remote-send "q"; nvim --server "$NVIM" --remote-send "<Cmd>lua require(\"craftzdog.utils.lazygit\").focus_origin()<CR>"; nvim --server "$NVIM" --remote {{filename}}; nvim --server "$NVIM" --remote-send ":{{line}}<CR>"; fi'
 gui:
   nerdFontsVersion: "3"
-
-  theme:
-    activeBorderColor:
-      - "#c94c16"
-      - "bold"
-
-    inactiveBorderColor:
-      - "#664c00"
-
-    searchingActiveBorderColor:
-      - "#c94c16"
-      - "bold"
-
-    optionsTextColor:
-      - "#268bd3"
-
-    selectedLineBgColor:
-      - "#1a6397"
-
-    cherryPickedCommitFgColor:
-      - "#268bd3"
-
-    cherryPickedCommitBgColor:
-      - "#d23681"
-
-    markedBaseCommitFgColor:
-      - "#268bd3"
-
-    markedBaseCommitBgColor:
-      - "#b28500"
-
-    unstagedChangesColor:
-      - "#f55350"
-
-    defaultFgColor:
-      - "#839395"
+  mouseEvents: false
+  scrollHeight: 30
+git:
+  autoFetch: false
+  diffRenderers:
+    - command: delta --dark --paging=never --syntax-theme="Solarized (dark)"
