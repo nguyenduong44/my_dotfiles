@@ -9,15 +9,76 @@
         "apiKey": "{env:NINEROUTER_API_KEY}"
       },
       "models": {
-        "DUONGNG": {
-          "name": "9Router DUONGNG",
-          "limit": {
-            "context": 330000,
-            "output": 13000
-          }
+        "my-coding-slaves": {
+          "name": "mah coding slaves"
         },
+        "test-that-shit": {
+          "name": "test that for me though"
+        },
+        "review-expert": {
+          "name": "review this nig4"
+        },
+        // --- OPENROUTER (3) ---
+        "openrouter/cohere/north-mini-code:free": {
+          "name": "OR: North Mini Code (Free)"
+        },
+        "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+          "name": "OR: Nemotron 3 Nano 30B Reasoning (Free)"
+        },
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
+          "name": "OR: Nemotron 3 Ultra 550B (Free)"
+        },
+
+        // --- MIMO CODE FREE (1) ---
+        "mimo/MiMo Auto": {
+          "name": "MiMo: MiMo Auto (Code Free)"
+        },
+
+        // --- DEEPSEEK-WEB (14) ---
+        "deepseek-web/DeepSeek V4 Pro": {
+          "name": "DS: DeepSeek V4 Pro"
+        },
+        "deepseek-web/DeepSeek V4 Pro Think": {
+          "name": "DS: DeepSeek V4 Pro Think"
+        },
+        "deepseek-web/DeepSeek V4 Pro Search": {
+          "name": "DS: DeepSeek V4 Pro Search"
+        },
+        "deepseek-web/DeepSeek V4 Pro Think+Search": {
+          "name": "DS: DeepSeek V4 Pro Think+Search"
+        },
+        "deepseek-web/DeepSeek V4 Flash": {
+          "name": "DS: DeepSeek V4 Flash"
+        },
+        "deepseek-web/DeepSeek V4 Flash Think": {
+          "name": "DS: DeepSeek V4 Flash Think"
+        },
+        "deepseek-web/DeepSeek V4 Flash Search": {
+          "name": "DS: DeepSeek V4 Flash Search"
+        },
+        "deepseek-web/DeepSeek V4 Flash Think+Search": {
+          "name": "DS: DeepSeek V4 Flash Think+Search"
+        },
+        "deepseek-web/DeepSeek V3.2": {
+          "name": "DS: DeepSeek V3.2"
+        },
+        "deepseek-web/DeepSeek R1": {
+          "name": "DS: DeepSeek R1"
+        },
+        "deepseek-web/DeepSeek R1 Search": {
+          "name": "DS: DeepSeek R1 Search"
+        },
+        "deepseek-web/DeepSeek Reasoner": {
+          "name": "DS: DeepSeek Reasoner"
+        },
+        "deepseek-web/DeepSeek Search": {
+          "name": "DS: DeepSeek Search"
+        },
+        "deepseek-web/DeepSeek Chat": {
+          "name": "DS: DeepSeek Chat"
+        }
       }
     }
   },
-  "model": "9router/DUONGNG"
+  "model": "my-coding-slaves"
 }
